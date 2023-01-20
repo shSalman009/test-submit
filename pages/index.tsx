@@ -1,10 +1,3 @@
-import { Inter } from '@next/font/google'
-
-
-export default function Home() {
-  return (
-    <>
-     
-    </>
-  )
+export default function index() {
+  return <div>index</div>;
 }

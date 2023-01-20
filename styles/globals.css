@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scrollbar-hidden::-webkit-scrollbar {
+  width: 0px;
+}
+
+.gray-filter {
+  filter: brightness(0) saturate(100%) invert(67%) sepia(12%) saturate(269%)
+    hue-rotate(179deg) brightness(96%) contrast(86%);
+}
+.black-filter {
+  filter: brightness(0) saturate(100%);
+}

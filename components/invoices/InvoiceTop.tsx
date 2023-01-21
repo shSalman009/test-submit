@@ -92,13 +92,15 @@ export default function InvoiceTop({
             )}
             <div className="flex items-center gap-2 justify-center p-5 relative">
               <Image
-                width={10}
-                height={10}
+                width={30}
+                height={30}
                 className="mb-3 text-gray-400"
-                src="images/Logout.svg"
+                src="/images/upload.png"
                 alt=""
               />
-              <p className="mb-2 text-sm text-gray-500 ">Upload Plane Image</p>
+              <p className="mb-2 text-sm text-sky-300 font-semibold ">
+                Upload Plane Image
+              </p>
             </div>
             <input type="file" className="hidden" onChange={handleChange} />
           </label>

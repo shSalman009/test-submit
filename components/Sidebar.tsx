@@ -19,7 +19,7 @@ function Sidebar() {
   }, [router.pathname]);
 
   return (
-    <div className="h-screen fixed top-0 left-0 bg-gray-800 w-64 pb-20 rounded-xl">
+    <div className="h-screen fixed top-0 left-0 bg-primary-blue w-64 pb-20 rounded-xl">
       <div className="text-center">
         <h4 className="text-slate-400 text-4xl inline-block font-semibold pt-5 pb-5 hover:text-white cursor-pointer transition-all duration-200 ">
           Logo
@@ -30,9 +30,9 @@ function Sidebar() {
           <li>
             <Link
               href="dashboard"
-              className={`group group flex items-center pl-6 py-4 rounded-l-full text-base font-normal hover:bg-gray-700 hover:text-white ${
+              className={`group group flex items-center pl-6 py-4 rounded-l-full text-base font-normal hover:bg-[#F1F5F9] hover:bg-opacity-10 hover:text-white ${
                 activePage === "/dashboard"
-                  ? "bg-gray-700 text-white [&>img]:filter-none"
+                  ? "bg-[#F1F5F9] bg-opacity-10 text-white [&>img]:filter-none"
                   : "text-gray-400"
               }`}
             >
@@ -49,9 +49,9 @@ function Sidebar() {
           <li>
             <Link
               href="reservations"
-              className={`group group flex items-center pl-6 py-4 rounded-l-full text-base font-normal hover:bg-gray-700 hover:text-white ${
+              className={`group group flex items-center pl-6 py-4 rounded-l-full text-base font-normal hover:bg-[#F1F5F9] hover:bg-opacity-10 hover:text-white ${
                 activePage === "/reservations"
-                  ? "bg-gray-700 text-white [&>img]:filter-none"
+                  ? "bg-[#F1F5F9] bg-opacity-10 text-white [&>img]:filter-none"
                   : "text-gray-400"
               }`}
             >
@@ -69,7 +69,7 @@ function Sidebar() {
             <button
               onClick={() => setTripsMenu(!tripsMenu)}
               type="button"
-              className="group flex items-center w-full pl-6 py-4 text-base font-normal transition duration-75 rounded-l-full  text-white hover:bg-gray-700"
+              className="group flex items-center w-full pl-6 py-4 text-base font-normal transition duration-75 rounded-l-full  text-white hover:bg-[#F1F5F9] hover:bg-opacity-10"
             >
               <Image
                 width={20}
@@ -103,7 +103,7 @@ function Sidebar() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-gray-700 hover:text-white"
+                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-[#F1F5F9] hover:bg-opacity-10 hover:text-white"
                 >
                   Products
                 </a>
@@ -111,7 +111,7 @@ function Sidebar() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-gray-700 hover:text-white"
+                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-[#F1F5F9] hover:bg-opacity-10 hover:text-white"
                 >
                   Billing
                 </a>
@@ -119,7 +119,7 @@ function Sidebar() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-gray-700 hover:text-white"
+                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-[#F1F5F9] hover:bg-opacity-10 hover:text-white"
                 >
                   Invoice
                 </a>
@@ -129,9 +129,9 @@ function Sidebar() {
           <li>
             <Link
               href="invoices"
-              className={`group group flex items-center pl-6 py-4 rounded-l-full text-base font-normal hover:bg-gray-700 hover:text-white ${
+              className={`group group flex items-center pl-6 py-4 rounded-l-full text-base font-normal hover:bg-[#F1F5F9] hover:bg-opacity-10 hover:text-white ${
                 activePage === "/invoices"
-                  ? "bg-gray-700 text-white [&>img]:filter-none"
+                  ? "bg-[#F1F5F9] bg-opacity-10 text-white [&>img]:filter-none"
                   : "text-gray-400"
               }`}
             >
@@ -149,7 +149,7 @@ function Sidebar() {
             <button
               onClick={() => setPlanes(!planes)}
               type="button"
-              className="group flex items-center w-full pl-6 py-4 text-base font-normal transition duration-75 rounded-l-full  text-white hover:bg-gray-700"
+              className="group flex items-center w-full pl-6 py-4 text-base font-normal transition duration-75 rounded-l-full  text-white hover:bg-[#F1F5F9] hover:bg-opacity-10"
             >
               <Image
                 width={20}
@@ -183,7 +183,7 @@ function Sidebar() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-gray-700 hover:text-white"
+                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-[#F1F5F9] hover:bg-opacity-10 hover:text-white"
                 >
                   Products
                 </a>
@@ -191,7 +191,7 @@ function Sidebar() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-gray-700 hover:text-white"
+                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-[#F1F5F9] hover:bg-opacity-10 hover:text-white"
                 >
                   Billing
                 </a>
@@ -199,7 +199,7 @@ function Sidebar() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-gray-700 hover:text-white"
+                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-[#F1F5F9] hover:bg-opacity-10 hover:text-white"
                 >
                   Invoice
                 </a>
@@ -210,7 +210,7 @@ function Sidebar() {
             <button
               onClick={() => setAmenities(!amenities)}
               type="button"
-              className="group flex items-center w-full pl-6 py-4 text-base font-normal transition duration-75 rounded-l-full  text-white hover:bg-gray-700"
+              className="group flex items-center w-full pl-6 py-4 text-base font-normal transition duration-75 rounded-l-full  text-white hover:bg-[#F1F5F9] hover:bg-opacity-10"
             >
               <Image
                 width={20}
@@ -244,7 +244,7 @@ function Sidebar() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-gray-700 hover:text-white"
+                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-[#F1F5F9] hover:bg-opacity-10 hover:text-white"
                 >
                   Products
                 </a>
@@ -252,7 +252,7 @@ function Sidebar() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-gray-700 hover:text-white"
+                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-[#F1F5F9] hover:bg-opacity-10 hover:text-white"
                 >
                   Billing
                 </a>
@@ -260,7 +260,7 @@ function Sidebar() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-gray-700 hover:text-white"
+                  className="flex items-center w-full py-3 pl-6 text-base font-normal transition duration-75 rounded-l-full group text-gray-400 hover:bg-[#F1F5F9] hover:bg-opacity-10 hover:text-white"
                 >
                   Invoice
                 </a>
@@ -270,9 +270,9 @@ function Sidebar() {
           <li>
             <Link
               href="contacts"
-              className={`group group flex items-center pl-6 py-4 rounded-l-full text-base font-normal hover:bg-gray-700 hover:text-white ${
+              className={`group group flex items-center pl-6 py-4 rounded-l-full text-base font-normal hover:bg-[#F1F5F9] hover:bg-opacity-10 hover:text-white ${
                 activePage === "/contacts"
-                  ? "bg-gray-700 text-white [&>img]:filter-none"
+                  ? "bg-[#F1F5F9] bg-opacity-10 text-white [&>img]:filter-none"
                   : "text-gray-400"
               }`}
             >
@@ -291,7 +291,7 @@ function Sidebar() {
           <li>
             <Link
               href="#"
-              className="group flex items-center pl-6 py-4 rounded-l-full text-base font-normal text-white hover:bg-gray-700"
+              className="group flex items-center pl-6 py-4 rounded-l-full text-base font-normal text-white hover:bg-[#F1F5F9] hover:bg-opacity-10"
             >
               <Image
                 width={20}
@@ -308,7 +308,7 @@ function Sidebar() {
           <li>
             <Link
               href="#"
-              className="group flex items-center pl-6 py-4 rounded-l-full text-base font-normal text-white hover:bg-gray-700"
+              className="group flex items-center pl-6 py-4 rounded-l-full text-base font-normal text-white hover:bg-[#F1F5F9] hover:bg-opacity-10"
             >
               <Image
                 width={20}
@@ -325,7 +325,7 @@ function Sidebar() {
           <li>
             <Link
               href="#"
-              className="group flex items-center pl-6 py-4 rounded-l-full text-base font-normal text-white hover:bg-gray-700"
+              className="group flex items-center pl-6 py-4 rounded-l-full text-base font-normal text-white hover:bg-[#F1F5F9] hover:bg-opacity-10"
             >
               <Image
                 width={20}
@@ -342,7 +342,7 @@ function Sidebar() {
           <li>
             <Link
               href="#"
-              className="group flex items-center pl-6 py-4 rounded-l-full text-base font-normal text-white hover:bg-gray-700"
+              className="group flex items-center pl-6 py-4 rounded-l-full text-base font-normal text-white hover:bg-[#F1F5F9] hover:bg-opacity-10"
             >
               <Image
                 width={20}
@@ -359,7 +359,7 @@ function Sidebar() {
           <li>
             <a
               href="#"
-              className="group flex items-center pl-6 py-4 rounded-l-full text-base font-normal text-white hover:bg-gray-700"
+              className="group flex items-center pl-6 py-4 rounded-l-full text-base font-normal text-white hover:bg-[#F1F5F9] hover:bg-opacity-10"
             >
               <Image
                 width={20}
@@ -376,7 +376,7 @@ function Sidebar() {
           <li>
             <a
               href="#"
-              className="group flex items-center pl-6 py-4 rounded-l-full text-base font-normal text-white hover:bg-gray-700"
+              className="group flex items-center pl-6 py-4 rounded-l-full text-base font-normal text-white hover:bg-[#F1F5F9] hover:bg-opacity-10"
             >
               <Image
                 width={20}
@@ -393,7 +393,7 @@ function Sidebar() {
           <li>
             <a
               href="#"
-              className="group flex items-center pl-6 py-4 rounded-l-full text-base font-normal text-white hover:bg-gray-700"
+              className="group flex items-center pl-6 py-4 rounded-l-full text-base font-normal text-white hover:bg-[#F1F5F9] hover:bg-opacity-10"
             >
               <Image
                 width={20}

@@ -133,7 +133,7 @@ export default function InvoiceBottom({
           <p className="mr-5 w-40 text-end font-semibold text-sky-300">
             Total:
           </p>
-          <p className="mr-5 w-40 text-end text-blue-900 font-semibold">
+          <p className="mr-5 w-40 text-end text-primary-blue font-semibold">
             {values.total}
           </p>
         </div>
